@@ -16,8 +16,8 @@ load_dotenv()
 
 client = OpenAI()
 
-AudioSegment.converter = r"C:\conda\envs\subtitles_app\Library\bin\ffmpeg.exe"
-AudioSegment.ffprobe = r"C:\conda\envs\subtitles_app\Library\bin\ffprobe.exe"
+#AudioSegment.converter = r"C:\conda\envs\subtitles_app\Library\bin\ffmpeg.exe"
+#AudioSegment.ffprobe = r"C:\conda\envs\subtitles_app\Library\bin\ffprobe.exe"
 
 st.title("Generator napisów do filmów")
 
