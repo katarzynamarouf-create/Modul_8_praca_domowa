@@ -1,7 +1,9 @@
+
 import streamlit as st
 from pydub import AudioSegment
 from dotenv import load_dotenv
 from openai import OpenAI
+import os
 
 def format_time(seconds):
 
@@ -29,7 +31,7 @@ uploaded_file = st.file_uploader(
 if uploaded_file:
 
     st.video(uploaded_file)
-
+    os.makedirs("temp", exist_ok=True)
     video_path = "temp/video.mp4"
 
     with open(video_path, "wb") as f:
