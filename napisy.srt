@@ -1,0 +1,440 @@
+1
+00:00:00,000 --> 00:00:06,000
+No i udało się, zebraliśmy wszelką wiedzę, którą potrzebujemy,
+
+2
+00:00:06,199 --> 00:00:10,199
+wiedzę i narzędzia, żebyśmy zaczęli rozmawiać o EDA,
+
+3
+00:00:10,399 --> 00:00:14,399
+czyli eksploracyjnej analizie danych.
+
+4
+00:00:14,600 --> 00:00:20,600
+Jest to proces, który pozwala nam wejść w świat danych,
+
+5
+00:00:20,799 --> 00:00:26,799
+zrozumieć, co dane w sobie zawierają, jakie mają problemy,
+
+6
+00:00:26,799 --> 00:00:30,799
+jakie mają tendencyjności, jakie są relacje itd.
+
+7
+00:00:31,000 --> 00:00:33,000
+Jest to swego rodzaju procedura.
+
+8
+00:00:33,200 --> 00:00:35,200
+I właśnie o tej procedurze sobie teraz powiemy.
+
+9
+00:00:35,400 --> 00:00:39,400
+Na razie powiemy sobie o niej w sposób obrazkowy, symboliczny,
+
+10
+00:00:39,599 --> 00:00:44,599
+ale już przy najbliższym następnym wideo wchodzimy w konkret,
+
+11
+00:00:44,799 --> 00:00:50,799
+zaciągamy prawdziwe dane i wykonujemy naszą analizę od A do Z.
+
+12
+00:00:51,000 --> 00:00:55,000
+Ale zanim o tym, powiedzmy sobie o krokach.
+
+13
+00:00:55,000 --> 00:00:59,000
+Pierwszym, podstawowym krokiem, z którym będziecie mieli do czynienia,
+
+14
+00:00:59,200 --> 00:01:03,200
+który powinniśmy wykonać, to jest ogólny kształt i informacje,
+
+15
+00:01:03,400 --> 00:01:07,400
+które są zawarte właśnie w tych danych.
+
+16
+00:01:07,599 --> 00:01:09,599
+Co rozumiemy przez ogólne informacje?
+
+17
+00:01:09,800 --> 00:01:16,800
+Średnie, statystyki opisowe, odchylenie standardowe, kwartyle, mediana,
+
+18
+00:01:17,000 --> 00:01:21,000
+ile mamy rzędów, spojrzenie na jakieś losowe rzędy.
+
+19
+00:01:21,400 --> 00:01:26,400
+Chodzi o to, żeby sobie z grubsza wyrobić już mniej więcej opinię o tym,
+
+20
+00:01:26,599 --> 00:01:28,599
+co my w tych danych mamy.
+
+21
+00:01:28,800 --> 00:01:31,800
+I tu to słowo z grubsza jest bardzo istotne i kluczowe.
+
+22
+00:01:32,000 --> 00:01:36,000
+Mówimy faktycznie o takim zrozumieniu podstawowego kształtu
+
+23
+00:01:36,199 --> 00:01:40,199
+i podstawowych informacji i charakterystyk, które mamy w tych danych.
+
+24
+00:01:40,400 --> 00:01:43,400
+Dlatego właśnie, żebyśmy przeszli do drugiego kroku,
+
+25
+00:01:43,599 --> 00:01:47,599
+który koncentruje się na brakujących wartościach.
+
+26
+00:01:47,599 --> 00:01:51,599
+Brakujące wartości to jest brak informacji.
+
+27
+00:01:51,800 --> 00:01:56,800
+Brakująca wartość mówi nam o tym, że czegoś nie byliśmy w stanie zarejestrować.
+
+28
+00:01:57,000 --> 00:02:02,000
+I teraz może w pierwszym odruchu by was kusiło, żeby wymazać takie rekordy,
+
+29
+00:02:02,199 --> 00:02:06,199
+takie rzędy, które mają brakujące wartości i swego rodzaju dziury,
+
+30
+00:02:06,400 --> 00:02:10,399
+ale byłoby to ogromnym błędem, bo wówczas byśmy wypaczyli proces,
+
+31
+00:02:10,600 --> 00:02:13,600
+który staramy się zrozumieć dzięki tym danym.
+
+32
+00:02:14,000 --> 00:02:19,000
+Zobaczycie też przykłady takich danych, gdzie mamy bardzo dużo brakujących wartości,
+
+33
+00:02:19,199 --> 00:02:21,199
+a jednak ich się pozbyć nie możemy.
+
+34
+00:02:21,399 --> 00:02:23,399
+Co robi się z wartościami brakującymi?
+
+35
+00:02:23,600 --> 00:02:26,600
+Jest kilka technik, my sobie o nich w przyszłości powiemy.
+
+36
+00:02:26,800 --> 00:02:30,800
+Na razie jest nie czas i miejsce na to, żeby tym się zajmować.
+
+37
+00:02:31,000 --> 00:02:35,000
+Istotne jest to, że radzenie sobie z wartościami brakującymi
+
+38
+00:02:35,199 --> 00:02:37,199
+jest sztuką niejako samą w sobie.
+
+39
+00:02:37,399 --> 00:02:40,399
+Dlaczego robimy to przy okazji drugiego kroku?
+
+40
+00:02:40,399 --> 00:02:44,399
+Przede wszystkim czasami łączy się to dwa kroki.
+
+41
+00:02:44,600 --> 00:02:47,600
+Robi się to jako jeden taki krok, żebyśmy zrozumieli,
+
+42
+00:02:47,800 --> 00:02:50,800
+jaka jest charakterystyka danych, a brakujące wartości są też
+
+43
+00:02:51,000 --> 00:02:53,000
+swego rodzaju charakterystyką danych.
+
+44
+00:02:53,199 --> 00:02:57,199
+Ja to rozdzieliłem, żebyśmy byli w stanie faktycznie to sobie odizolować
+
+45
+00:02:57,399 --> 00:03:01,399
+i skoncentrować się na tym i docenić faktycznie to zjawisko,
+
+46
+00:03:01,600 --> 00:03:04,600
+polegające na tym, że pewnych wartości nam brakuje.
+
+47
+00:03:04,800 --> 00:03:08,800
+Jak zrozumieliśmy, jakich wartości nam brakuje i jakie może mieć to
+
+48
+00:03:08,800 --> 00:03:12,800
+konsekwencje dla naszej analizy czy modeli sztucznej inteligencji,
+
+49
+00:03:13,000 --> 00:03:15,000
+które będziemy budować.
+
+50
+00:03:15,199 --> 00:03:19,199
+Przechodzimy do kroku trzeciego, czyli kroku badania pojedynczych kolumn,
+
+51
+00:03:19,399 --> 00:03:21,399
+czasami nazywanych zmiennymi.
+
+52
+00:03:21,600 --> 00:03:23,600
+Pojedyncze zmienne, pojedyncze kolumny.
+
+53
+00:03:23,800 --> 00:03:27,800
+To będzie krok, w którym będziemy się posiłkować bardzo mocno histogramami,
+
+54
+00:03:28,000 --> 00:03:33,000
+barplotami, czyli naszymi słupkowymi wykresami, żeby zrozumieć,
+
+55
+00:03:33,199 --> 00:03:37,199
+co się właściwie dzieje w tych pojedynczych kolumnach.
+
+56
+00:03:37,199 --> 00:03:41,199
+Przy okazji pierwszego kroku wygenerowaliśmy sobie statystyki opisowe,
+
+57
+00:03:41,399 --> 00:03:45,399
+więc coś już zrozumieliśmy, ale dzięki dodatkowym narzędziom
+
+58
+00:03:45,600 --> 00:03:48,600
+jesteśmy w stanie wejść znacznie głębiej.
+
+59
+00:03:48,800 --> 00:03:52,800
+To jest dla nas bardzo istotne, żebyśmy faktycznie zrozumieli
+
+60
+00:03:53,000 --> 00:03:57,000
+charakterystykę nie na poziomie tylko średnich i statystyk opisowych,
+
+61
+00:03:57,199 --> 00:04:01,199
+tylko charakterystykę na poziomie rozkładów, jak te pojedyncze kolumny,
+
+62
+00:04:01,399 --> 00:04:03,399
+pojedyncze zmienne się zachowują.
+
+63
+00:04:03,600 --> 00:04:07,600
+I dochodzimy do czwartego kroku, w którym już jesteśmy w stanie
+
+64
+00:04:07,800 --> 00:04:12,800
+niejako transformować nasze dane, czyli coś w nich pozmieniać.
+
+65
+00:04:13,000 --> 00:04:17,000
+Możemy dodać pewne wartości, stosując techniki uzupełniania
+
+66
+00:04:17,200 --> 00:04:21,200
+brakujących danych, możemy dojść do wniosku, że niektóre rzędy
+
+67
+00:04:21,399 --> 00:04:25,399
+są tak mocno zepsute, że je po prostu możemy usunąć,
+
+68
+00:04:25,600 --> 00:04:31,600
+że w przyszłości też czegoś, czego tutaj nie prezentuję,
+
+69
+00:04:32,600 --> 00:04:36,600
+być może dojdziemy do wniosku, że chcielibyśmy dodać kilka kolumn,
+
+70
+00:04:36,799 --> 00:04:40,799
+które jesteśmy w stanie stworzyć na podstawie innych istniejących kolumn.
+
+71
+00:04:41,000 --> 00:04:45,000
+Takim klasycznym bardzo przypadkiem, przykładem, o którym często mówię,
+
+72
+00:04:45,200 --> 00:04:49,200
+na przykład mamy kolumnę, w której mamy rekomendacje czy opis
+
+73
+00:04:49,399 --> 00:04:53,399
+jakiegoś produktu, czy może opinie a propos produktu
+
+74
+00:04:53,600 --> 00:04:57,600
+i jesteśmy w stanie używając modeli machine learningowych
+
+75
+00:04:58,600 --> 00:05:04,600
+wygenerować sobie informacje a propos tego, czy ta opinia
+
+76
+00:05:04,799 --> 00:05:08,799
+jest pozytywna, negatywna czy neutralna, tak zwany sentyment,
+
+77
+00:05:09,000 --> 00:05:13,000
+to się po angielsku nazywa sentiment analysis, generujemy ten sentyment
+
+78
+00:05:13,200 --> 00:05:17,200
+i teraz tuż obok kolumny, w której mamy tę opinię, jesteśmy w stanie
+
+79
+00:05:17,399 --> 00:05:21,399
+dodać nową kolumnę, w której mamy trzy wartości, pozytyw, negatyw
+
+80
+00:05:21,600 --> 00:05:25,600
+i neutral na określenie właśnie tego, że mamy do czynienia z jakąś
+
+81
+00:05:25,799 --> 00:05:29,799
+tego typu informacją i wówczas jesteśmy w stanie taką informację
+
+82
+00:05:30,000 --> 00:05:34,000
+pisaną językiem naturalnym przekształcić w kategorie, a my wiemy już
+
+83
+00:05:34,200 --> 00:05:38,200
+jak kategorie badać i jak pracować z kategoriami.
+
+84
+00:05:38,399 --> 00:05:42,399
+Piątym krokiem jest skoncentrowanie się na relacjach,
+
+85
+00:05:42,600 --> 00:05:46,600
+czyli koncentrujemy się na tym, jakie są zależności
+
+86
+00:05:46,799 --> 00:05:50,799
+pomiędzy poszczególnymi kolumnami, dwoma takimi narzędziami
+
+87
+00:05:51,000 --> 00:05:55,000
+najpowszechniej używanymi, z których my sobie rozpoczniemy
+
+88
+00:05:55,000 --> 00:05:59,000
+badania relacji, jest oczywiście macierz korelacji,
+
+89
+00:05:59,200 --> 00:06:03,200
+correlation matrix oraz scatterplot, czyli nasz wykres punktowy,
+
+90
+00:06:03,399 --> 00:06:07,399
+który pozwala nam się skoncentrować.
+
+91
+00:06:07,600 --> 00:06:11,600
+Scatterplot, który pozwala nam się bliżej przyjrzeć
+
+92
+00:06:11,799 --> 00:06:15,799
+dwóm konkretnym zmiennym oraz correlation matrix,
+
+93
+00:06:16,000 --> 00:06:20,000
+który pozwala nam spojrzeć na wszystko z lotu ptaka.
+
+94
+00:06:21,000 --> 00:06:25,000
+Ostatnim szóstym krokiem jest badanie tak zwanych wartości odstających,
+
+95
+00:06:25,200 --> 00:06:29,200
+anomalii outlierów, czyli wchodzi nam boxplot, scatterplot
+
+96
+00:06:29,399 --> 00:06:33,399
+po to, żebyśmy zobaczyli, czy mamy jakieś wartości, które są poprawne,
+
+97
+00:06:33,600 --> 00:06:37,600
+są absolutnie poprawne z punktu widzenia wartości brakujących.
+
+98
+00:06:37,799 --> 00:06:41,799
+One nie muszą mieć nic wspólnego z wartościami brakującymi,
+
+99
+00:06:42,000 --> 00:06:46,000
+ale w jakimś sensie odstają od reszty, w jakimś sensie burzą nam ten obraz.
+
+100
+00:06:47,000 --> 00:06:51,000
+Wiecie, to tak jakbyśmy chcieli zbudować model, który przewiduje,
+
+101
+00:06:51,200 --> 00:06:55,200
+jakie powinno być oprocentowanie do jakichś kredytów konkretnych
+
+102
+00:06:55,399 --> 00:06:59,399
+i mielibyśmy miks osób superbogatych i superbiednych
+
+103
+00:06:59,600 --> 00:07:03,600
+i wówczas byśmy wiedzieli, że faktycznie ten model
+
+104
+00:07:03,799 --> 00:07:07,799
+nie będzie w stanie sobie poradzić z takimi dwoma przypadkami
+
+105
+00:07:08,000 --> 00:07:12,000
+i być może rozdzielenie tych dwóch grup sprawi,
+
+106
+00:07:12,000 --> 00:07:16,000
+że nie będą to bardzo dobrze funkcjonujące modele.
+
+107
+00:07:16,200 --> 00:07:20,200
+I tyle, sześć takich prostych kroków, czyli podsumowując,
+
+108
+00:07:20,399 --> 00:07:24,399
+żebyśmy zobaczyli to sobie z lotu ptaka, ogólne informacje a propos danych,
+
+109
+00:07:24,600 --> 00:07:28,600
+brakujące wartości, pojedyncze zmienne, transformacje,
+
+110
+00:07:28,799 --> 00:07:32,799
+relacje oraz wartości odstające.
+
